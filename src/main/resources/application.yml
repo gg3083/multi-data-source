@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    first:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/multi-data-source-01?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
+    second:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/multi-data-source-02?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
+
+mybatis:
+  typeAliasesPackage: cn.gg3083.multidatasource.domain
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:cn.gg3083.multidatasource.mapper/*.xml
