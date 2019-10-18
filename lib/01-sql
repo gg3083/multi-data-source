@@ -3,7 +3,7 @@ CREATE TABLE `t_user` (
 `user_name`  varchar(24) NULL ,
 `user_pwd`  varchar(24) NULL ,
 `create_time`  datetime NULL DEFAULT CURRENT_TIMESTAMP ,
-`is_delete1`  tinyint(2) NULL DEFAULT 1 ,
+`is_delete`  tinyint(2) NULL DEFAULT 1 ,
 PRIMARY KEY (`pk_user_id`)
 )
 ;

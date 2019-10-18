@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.gg3083.multidatasource.mapper.NameMapper">
+
+    <insert id="insert">
+        INSERT INTO
+          t_name
+            (`name`)
+          VALUES
+            ( #{name})
+    </insert>
+
+    <select id="selectAll" resultType="cn.gg3083.multidatasource.domain.Name">
+        select *  from t_name
+    </select>
+
+</mapper>

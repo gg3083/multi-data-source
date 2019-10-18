@@ -13,6 +13,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @SpringBootApplication
+@MapperScan("cn.gg3083.multidatasource.mapper")
 @EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class, MybatisAutoConfiguration.class})
 public class MultiDataSourceApplication {
 

@@ -10,6 +10,16 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: root
+    master:
+      jdbc-url: jdbc:mysql://127.0.0.1:3307/mysql_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
+    slave:
+      jdbc-url: jdbc:mysql://127.0.0.1:3308/mysql_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: root
 
 mybatis:
   typeAliasesPackage: cn.gg3083.multidatasource.domain
